@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2f3137;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 6.5em;
+}
+
+img {
+      
+    width: 100%;
+           
+}
