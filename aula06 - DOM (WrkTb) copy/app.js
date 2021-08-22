@@ -45,15 +45,25 @@ const listadeFelinos = [
     },
     ];
 
-    listadeFelinos.forEach((value, indice) => {
-        let template = `<h2>${value.title}</h2>
-        <img src="${value.imgUrl}" alt="">
-        <p>${value.description}</p>
-        <p>${value.createdAt}</p>`;
-        document.querySelector('.title').innerHTML = template;
+// Modificando conteúdo do title
+document.title = 'Lista de Felinos';
+// Mofificando conteúdo do header
+document.querySelector('.tituloHeader').innerText = "Lista de Felinos";
+// Criando variáveis para armazenar o conteúdo das tags h2, p, img e h5 que estão dentro do article na página index.html.
+let h2 = document.querySelectorAll('h2');
+let p = document.querySelectorAll('p');
+let img = document.querySelectorAll('img');
+let h5 = document.querySelectorAll('h5');
 
-        let img = document.querySelector('img');
-        img.style.width = '250px';
-    });
-    
-    
+// Criando loop para atribuir os novos conteúdos da listadeFelinos as variáveis criadas anteriormente.
+// No html temos 9 article e aqui na listadeFelinos temos 6 itens.
+for(let i = 0; i <= listadeFelinos.length; i++) {
+    listadeFelinos.forEach((item, i) => {
+        h2[i].innerHTML = listadeFelinos[i].title;
+        p[i].innerHTML = listadeFelinos[i].description;
+        img[i].src = listadeFelinos[i].imgUrl;
+        h5[i].innerHTML = listadeFelinos[i].createdAt;
+    })
+};
+
+
