@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ <!--    Crie um formulário -->
+    <form action=""></form>
+
+    <script>
+        
+
+       
+
+       //Selecione o formulário e salve-o numa variável com querySelector
+       
+       const form = document.querySelector("form");
+
+       window.addEventListener("load", () => {
+
+
+            //Insira um estilo da sua escolha, a sugestão seria
+            // o display flex com flex-direction column.
+            form.classList.add("formStyle");
+
+            //Crie um título com o texto: “Login”.            
+            let titulo = document.createElement("h1");
+            form.appendChild(titulo);
+            titulo.textContent = "Login";
+
+            //Crie um campo de input text com um placeholder: “Email”.
+            let inputEmail = document.createElement("input");
+            form.appendChild(inputEmail);
+            inputEmail.setAttribute("placeholder", "E-Mail");
+            inputEmail.setAttribute("type", "email");
+            //Insira a propriedade disabled no campo de Email.
+            inputEmail.disabled = true;
+            //Remova o atributo placeholder do email.
+            inputEmail.removeAttribute("placeholder", "E-Mail");
+
+            //Crie um campo de input password com um placeholder: “Senha”
+            let inputSenha = document.createElement("input");
+            form.appendChild(inputSenha);
+            inputSenha.setAttribute("placeholder", "Senha");
+            inputSenha.setAttribute("type", "password");
+
+            //Crie um botão submit com o texto “Enviar”.
+            let botaoSubmit = document.createElement("button");
+            form.appendChild(botaoSubmit);
+            botaoSubmit.textContent = "Enviar"
+
+            //Crie um botão reset com o texto “Cancelar”.
+            let botaoCancelar = document.createElement("button");
+            form.appendChild(botaoCancelar);
+            botaoCancelar.textContent = "Cancelar"
+
+
+       })
+       
+       
+
+                
+
+                
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

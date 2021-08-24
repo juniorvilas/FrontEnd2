@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="meuInput" type="text">
+
+    <script>
+        window.addEventListener("load", () => {
+        /*     onkeydown
+        Este evento é disparado quando uma tecla é pressionada (para baixo). Ao
+        contrário do evento keypress, keydown é disparado para as teclas que
+        produzem um caractere e também para aquelas que não o fazem. */
+        let meuInput = document.querySelector('#meuInput');
+        meuInput.onkeydown = function(event){
+        alert("A tecla foi apertada: "+ event.key);
+        }  
+        
+        /* onkeyup
+        Este evento é disparado apenas quando a tecla é liberada. */
+
+        let teclaLiberada = document.querySelector('#meuInput');
+        teclaLiberada.onkeyup = function(event){
+        alert("A tecla foi solta: "+ event.key);
+        }
+
+        /* onkeypress
+        Este evento é disparado no final do toque de empurrar e soltar da tecla */
+
+        let finalTecla = document.querySelector('#meuInput');
+        finalTecla.onkeypress = function(event){
+        alert("A tecla foi pressionada: "+ event.key);
+        }
+
+
+
+
+        })
+    </script>
+</body>
+</html>
