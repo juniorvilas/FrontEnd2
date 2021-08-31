@@ -24,9 +24,9 @@
                 var texto = document.getElementById("txtIncluir");
                 var li = document.createElement("li");
 
-                li.textContent = texto.value;
-                lista.appendChild(li);
-                texto.value=""; // deixar o campo imput em branco apos add
+                li.textContent = texto.value; // vai adicionar o texto escrito no input dentro de uma li
+                lista.appendChild(li); // vai adicionar a li dentro da ul 
+                texto.value=""; // deixar o campo input em branco apos add
                 texto.focus();// deixar no campo de digitação após clicar no botão add
 
             });
