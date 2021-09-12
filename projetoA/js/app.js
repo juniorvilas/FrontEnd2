@@ -23,7 +23,7 @@ function pop() {
   document.getElementById('pop').style.display='block';
 }
 
-// a função fechar fecha o formulário
+// a função fechar fecha o formulário 
 function fechar() {
     document.getElementById('pop').style.display='none';
 }
