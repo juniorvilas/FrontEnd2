@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Default range slider:</title>
+</head>
+
+<body>
+
+
+
+
+    <div id="sliders">
+        <!-- n 01 -->
+
+        <div>
+            <h2>Primeira barra de carregamento:</h2>
+            <p id="paragrafo01">Aumentar a fonte de acordo a barra de progresso</p>
+            <input id="sliderPara" type="range" min="12" max="50" value="16">
+        </div>
+
+        <!-- n 02 -->
+
+        <h2>Segunda barra de carregamento:</h2>
+        <p>Aumentar imagem de acordo com a barra de progresso</p>
+        <img id="imgStar" src="img/starbucks.jfif" alt="">
+        <br>
+        <input id="sliderImg" type="range" min="100" max="400" value="100">
+
+        <!-- n 03 -->
+        <h2>Terceira barra de progresso: </h2>
+        <p>Alterar o background color da página</p>
+        <input id="mySliderColor" type="range" min="200" max="400" value="0">
+
+        <!-- n 04 -->
+        <h2>Quarta barra de progresso:</h2>
+        <p> Alterar a cor da fonte da página</p>
+        <input id="mySliderCorFonte" type="range" min="200" max="400" value="0">
+    </div>    
+    <!-- <p>Arraste o controle deslizante para exibir o valor atual.</p>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p>Valor: <span id="demo"></span></p>
+    </div> -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
